@@ -21,10 +21,10 @@ public class Ejercicio1 {
 		unidad=numeroIntroducido%10;
 		
 		//Divido numeroIntroducido entre 10 y luego uso modulo 10 para dar un valor a variable decena 
-		decena=numeroIntroducido/10%10;
+		decena=(numeroIntroducido/10)%10;
 
 		//Divido numeroIntroducido entre 100 y luego uso modulo 10 para dar un valor a variable centena 
-		centena=numeroIntroducido/100%10;
+		centena=(numeroIntroducido/100)%10;
 		
 		//Divido numeroIntroducido entre 1000 para dar valor a variable millar
 		millar=numeroIntroducido/1000;
