@@ -6,21 +6,30 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 
-		int numerosDni, numeroEquiv;
+		int numerosDni, numeroEquivalente;//Declaro las variables
 		
+		//Creo el Scanner, lo nombro dogma y lo importo 
 		Scanner dogma = new Scanner(System.in);
 		
+		//Solicito al usuario los numeros de si DNI por consola
 		System.out.print("Introduzca los numeros de su DNI. ");
 		
+		//Asigno valor a variable numerosDni mediante uso del Scanner
 		numerosDni = dogma.nextInt();
 	
+		//Establezco que de cumplirse una de las dos condiciones siguientes se imprima el siguiente mensaje por pantalla
 		if ((numerosDni<10000000) || (numerosDni>99999999)) {
 			System.out.print("Error, el numero introducido no es de 8 digitos");
-		} 
+			
+		//Establezco que de no cumplirse ninguna de las dos condiciones anteriores el programa se siga ejecutando con normalidad
+		} else {
 		
-		numeroEquiv = numerosDni%23;
+		//Le doy a variable numeroEquivalente valor igual al modulo (resto) de numerosDni dividido entre 23
+		numeroEquivalente = numerosDni%23;
 		
-		switch (numeroEquiv) {
+		/*Le doy al switch la variable a comprobar (numeroEquivalente) y segun el valor de la variable
+		ejecutara el contenido del case correspondiente (imprimiendo por pantalla la letra correspondiente)*/
+		switch (numeroEquivalente) {
 		
 			case 0 ->
 			System.out.print("T");
@@ -90,9 +99,10 @@ public class Ejercicio2 {
 			
 			case 22 ->
 			System.out.print("E");
-			
+			}
 		}	
 		
+		//Cierro el Scanner
 		dogma.close();
 
 	}

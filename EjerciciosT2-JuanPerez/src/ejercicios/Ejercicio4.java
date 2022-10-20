@@ -5,31 +5,42 @@ import java.util.Scanner;
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
-		
-		/*casos 1 a 15 nada (quizas poner este swtich al final) 
-		 * dar valor a variable con primera cifra y segunda cifra usando % y/ 
-		hacer switch para primera cifra y segunda cifra, comprobacion de rango del numero, */
 
-		int numeroIntroducido, decena, unidad;
+		int numeroIntroducido, decena, unidad;//Declaro las variables de tipo int
 		
-		String numeroCadena = "";
+		String numeroCadena = ""; /*Declaro la variable de tipo String y la inicio dejandola 
+		vacia para poder usarla sin problemas posteriormente*/
 		
+		//Creo un Scanner, lo nombro dogma y lo importo
 		Scanner dogma = new Scanner(System.in);
 		
+		//Solicito a usuario un numero por consola
 		System.out.print("Introduzca un número entero entre 1 y 99: ");
 		
+		
+		//Asigno a la variable numeroIntroducido un valor mediante uso del Scanner
 		numeroIntroducido = dogma.nextInt();
 		
+		//Establezco que de cumplirse cualquiera de las dos condiciones siguientes se imprima el siguiente mensaje por pantalla
 		if ((numeroIntroducido<=0) || (numeroIntroducido>=100)) {
 			System.out.print("El numero introducido no es valido, introduzca un numero entre 1 y 99");
 		}
 		
+		/*Asigno valor a variable decena, igual a numeroIntroducido dividido entre diez, 
+		para poder usar decena para poder averiguar la primera cifra del numeroIntroducido de ser este de 2 cifras*/
 		decena = numeroIntroducido/10;
 				
+		/*Asigno valor a variable unidad, igual al resto de la division de numeroIntroducido dividido entre diez, 
+		para poder usar unidad para averiguar la segunda cifra del numeroIntroducido de ser este de 2 cifras 
+		o la unica cifra de ser este numero de una sola cifra*/
 		unidad = numeroIntroducido%10;
 		
+		//Establezco que de cumplirse ambas condiciones a continuacion escritas se ejecute el siguiente switch
 		if ((numeroIntroducido>10) && (numeroIntroducido<16)) {
 		
+		/*Le doy al switch la variable a comprobar (numeroIntroducido para numeros del 11 al 15)
+		y segun el valor de la variable ejecutara el contenido del case correspondiente imprimiendo un mensaje por pantalla,
+		finalizando aqui el programa*/
 		switch (numeroIntroducido) {
 			
 			case 11->
@@ -44,8 +55,13 @@ public class Ejercicio4 {
 				System.out.print("QUINCE");
 			} 
 		
+		//Establezco que de no cumplirse ambas condiciones anteriores se ejecuten los dos switch siguientes
 		} else {
 		
+		/*Le doy al switch la variable a comprobar (decena) y segun el valor de la variable	 ejecutara el contenido del case correspondiente
+		 Creo un if dentro de cada case que añade un valor a la variable de tipo string numeroCadena (mediante uso de operador suma y asigna)
+		 en caso que la unidad del numero introducido sea 0
+		 y a continuacion creo un else para que añada un valor distinto en caso que no sea 0 */
 		switch (decena) {
 			
 			case 1->{
@@ -62,7 +78,7 @@ public class Ejercicio4 {
 				if (unidad==0) {
 					numeroCadena+="VEINTE";
 				} else {
-					numeroCadena+="VEINTE Y ";
+					numeroCadena+="VEINTI";
 				}
 			}
 				
@@ -127,6 +143,8 @@ public class Ejercicio4 {
 			}
 		}
 		
+		/*Le doy al switch la variable a comprobar (unidad) y segun el valor de la variable	 ejecutara el contenido del case correspondiente
+		 añadiendo un valor a la variable de tipo string numeroCadena (mediante uso de operador suma y asigna) */
 		switch (unidad) {
 		
 			case 1->
@@ -159,9 +177,10 @@ public class Ejercicio4 {
 		}
 		
 		
-		
+		//Imprimo mensaje por pantalla mostrando EL VALOR FINAL de numeroCadena mediante impresion por pantalla
 		System.out.print(numeroCadena);
 		
+		//Cierro el Scanner
 		dogma.close();
 	}
 

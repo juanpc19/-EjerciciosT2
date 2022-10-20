@@ -33,19 +33,23 @@ public class Ejercicio1 {
 		if ((numeroIntroducido<0) || (numeroIntroducido>9999)) {
 			System.out.print("Numero erroneo, introduzca un numero entre 0 y 9999");
 			
-		//Establezco que de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla
+		/*Establezco que de no cumplirse las condiciones anteriores se comprueben las siguientes y
+		de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla*/
 			} else if ((numeroIntroducido>=0) && (numeroIntroducido<=9)) {
 				System.out.print("El numero introducido es capicua");
 				
-		//Establezco que de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla		
+		/*Establezco que de no cumplirse las condiciones anteriores se comprueben las siguientes y
+		de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla*/		
 			} else if ((numeroIntroducido>=10) && (numeroIntroducido<=99) && (unidad==decena)) {
 				System.out.print("El numero introducido es capicua");	
 				
-		//Establezco que de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla		
+		/*Establezco que de no cumplirse las condiciones anteriores se comprueben las siguientes y
+		de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla*/
 			} else if ((numeroIntroducido>=100) && (numeroIntroducido<=999) && (unidad==centena)) {
 				System.out.print("El numero introducido es capicua");
 				
-		//Establezco que de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla		
+		/*Establezco que de no cumplirse las condiciones anteriores se comprueben las siguientes y
+		de cumplirse todas las condiciones establecidas a continuacion se imprima el siguiente mensaje por pantalla*/	
 			} else if ((numeroIntroducido>=1000) && (numeroIntroducido<=9999)
 				&& (unidad==millar) && (decena==centena)) {
 				System.out.print("El numero introducido es capicua");
