@@ -6,16 +6,36 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		
-		int numero1, numero2;
+		double comidaComprada, numeroAnimales, comidaTodos;
 		
 		Scanner dogma = new Scanner(System.in);
 		
-		System.out.print("Introduzca los numeros de su DNI. ");
+		System.out.print("Cuanta comida ha comprado? ");
 
-		numero1 = dogma.nextInt();
-		numero1 = numero1%10;
+		comidaComprada = dogma.nextDouble();
+		
+		System.out.print("Cuantos animales ha de alimentar? ");
+		
+		numeroAnimales = dogma.nextDouble();
+		
+		System.out.print("Cuanta comida comen todos los animales en total? ");
 
-		System.out.print(numero1);
+		comidaTodos = dogma.nextDouble();
+		
+		if (numeroAnimales==0) {
+			System.out.print("El numero de animales que necesitan comida es 0, "
+			+ "indique correctamente la cantidad de animales que necesitan comida");
+			
+		} else if ((comidaComprada-comidaTodos)>=1) {
+			System.out.print("Se dispone de comida suficiente para cada animal");
+			
+		} else {
+			System.out.print("No se dispone de comida suficiente para cada animal,"
+			+ " a cada animal le corresponde un racion equivalente a: " +
+			(comidaComprada/numeroAnimales) + "kilos");
+		}
+		
+		dogma.close();
 	}
 
 }
