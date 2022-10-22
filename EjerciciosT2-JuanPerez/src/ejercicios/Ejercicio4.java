@@ -14,7 +14,7 @@ public class Ejercicio4 {
 		//Creo un Scanner, lo nombro dogma y lo importo
 		Scanner dogma = new Scanner(System.in);
 		
-		//Solicito a usuario un numero por consola
+		//Solicito a usuario un numero por consola comprendido en el intervalo [1,99]
 		System.out.print("Introduzca un número entero entre 1 y 99: ");
 		
 		

@@ -3,21 +3,36 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio5 {
+	
+		/*Compruebo que de ser variable numeroIntroducido menor que 0 la multiplica por -1
+		 * imprimiendo por pantalla un mensaje con el valor absoluto del numero
+		 * 
+		 * Compruebo que de ser variable numeroIntroducido igual o mayor que 0 
+		 * imprime por pantalla el numeroIntroducido lo cual sera igual al valor absoluto */
 
 	public static void main(String[] args) {
 		
-		int numeroIntroducido;
+		double numeroIntroducido;//Declaro la variable
 		
+		//Creo un Scanner, lo nombro dogma y lo importo
 		Scanner dogma = new Scanner(System.in);
 		
-		System.out.print("Introduzca un numero entero ");
+		//Solicito a usuario un numero por consola
+		System.out.print("Introduzca un numero ");
 		
-		numeroIntroducido = dogma.nextInt();
+		//Asigno a la variable numeroIntroducido un valor mediante uso del Scanner
+		numeroIntroducido = dogma.nextDouble();
 		
-		System.out.print(numeroIntroducido<=0 ? 
-		"El valor absoluto del numero introducido es: " +  numeroIntroducido*-1 : "El valor"
-		+ " absoluto del numero introducido es: " + numeroIntroducido);
+		//Uso operador ternario con condicion de: variable numeroIntroducido menor que 0
+		System.out.print(numeroIntroducido<0 ? 
+				
+		//De cumplirse la condicion imprimo el mensaje mostrado a continuacion
+		"El valor absoluto del numero introducido es: " +  numeroIntroducido*-1 :
+			
+		//De no cumplirse la condicion imprimo el mensaje mostrado a continuacion
+		"El valor absoluto del numero introducido es: " + numeroIntroducido);
 		
+		//Cierro Scanner
 		dogma.close();
 
 	}
