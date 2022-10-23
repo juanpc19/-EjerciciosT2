@@ -3,6 +3,19 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio4 {
+	
+	/*Comprobar que si el usuario introduce un valor para variable numeroIntroducido
+	 * no comprendido en el intervalo [1,99] se imprima por pantalla un mensaje de error
+	 * 
+	 * Combrobar que si el usuario introduce un valor para variable numeroIntroducido
+	 * comprendido en el intervalo [11,15] se ejecuta el switch que evalua la variable numeroIntroducido
+	 * imprimiendo mensaje por pantalla del case correspondiente
+	 * 
+	 * Comprobar que de estar el numeroIntroducido fuera del rango [11,15] pero dentro del rango [1,99]
+	 * se evalua este a traves de dos switch diferentes que evaluan su unidad y su decena
+	 * y que estos asignan de forma conjunta (si es 10 o mayor, de ser del 1 al 9 solo ejecuta el switch unidad)
+	 * valores tipo string a variable numeroCadena segun su case correspondiente proporcionandonos
+	 * la varible numeroCadena que acto seguido sera imprimida por pantalla */
 
 	public static void main(String[] args) {
 
@@ -24,7 +37,7 @@ public class Ejercicio4 {
 		//Establezco que de cumplirse cualquiera de las dos condiciones siguientes se imprima el siguiente mensaje por pantalla
 		if ((numeroIntroducido<=0) || (numeroIntroducido>=100)) {
 			System.out.print("El numero introducido no es valido, introduzca un numero entre 1 y 99");
-		}
+		} else {
 		
 		/*Asigno valor a variable decena, igual a numeroIntroducido dividido entre diez, 
 		para poder usar decena para poder averiguar la primera cifra del numeroIntroducido de ser este de 2 cifras*/
@@ -174,8 +187,9 @@ public class Ejercicio4 {
 			case 9->
 				numeroCadena+="NUEVE";
 				}
-		}
+			}
 		
+		}
 		
 		//Imprimo mensaje por pantalla mostrando EL VALOR FINAL de numeroCadena mediante impresion por pantalla
 		System.out.print(numeroCadena);
