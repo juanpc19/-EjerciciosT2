@@ -50,7 +50,7 @@ public class Ejercicio3 {
 			
 		/*Establezco que de no cumplirse la condicion anterior se compruebe la siguiente condicion,
 		que de cumplirse imprimira por pantalla el siguiente mensaje*/
-		} else if (comidaComprada>comidaNecesaria) {
+		} else if (comidaComprada>=comidaNecesaria) {
 			System.out.print("Se dispone de comida suficiente para cada animal");
 			
 		/*Establezco que de no cumplirse ninguna condicion anterior se imprimira por pantalla el siguiente mensaje*/	
