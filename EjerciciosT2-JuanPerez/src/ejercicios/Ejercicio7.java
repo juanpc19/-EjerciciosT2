@@ -15,9 +15,9 @@ public class Ejercicio7 {
 	 * dejando la variable horas igual, añadiendo +1 a variable minutos y dando nuevo valor a variable segundos igual a 0
 	 * 
 	 * Comprobar que si variable segundos es igual a 59 y a la vez variable minutos es igual a 59 
-	 * y a la vez la variable horas es igual o mayor a 0 y a la vez la variable horas es igual o menor a 22, 
-	 * se imprima un mensaje por pantalla sumando +1 a variable horas, y dando a variables minutos
-	 * y segundos valores igual a 0
+	 * y a la vez la variable horas es igual o menor a 22, 
+	 * se imprima un mensaje por pantalla sumando +1 a variable horas, y dando a variables
+	 * minutos y segundos valores igual a 0
 	 * 
 	 * Comprobar que si variable segundos es igual a 59 y a la vez la variable minutos es igual a 59
 	 * y a la vez la variable horas es igual a 23, se imprima un mensaje por pantalla dando
@@ -61,12 +61,12 @@ public class Ejercicio7 {
 			
 		/*Establezo que de no cumplirse la condicion anterior se compruebe la siguiente condicion 
 		que de cumplirse imprimira el siguiente mensaje por pantalla*/	
-		} else if ((segundos==59) && (minutos>=0) && (minutos<=58)) {
+		} else if ((segundos==59) && (minutos<=58)) {
 			System.out.print("La hora actual mas un segundo es: " + horas + " : " + ++minutos + " : " + (segundos = 0));
 			
 		/*Establezo que de no cumplirse la condicion anterior se compruebe la siguiente condicion 
 		que de cumplirse imprimira el siguiente mensaje por pantalla*/
-		} else if ((segundos==59) && (minutos==59) && (horas>=0) && (horas<=22)) {
+		} else if ((segundos==59) && (minutos==59) && (horas<=22)) {
 			System.out.print("La hora actual mas un segundo es: " + ++horas + " : " + (minutos = 0) + " : " + (segundos = 0));
 			
 		/*Establezo que de no cumplirse la condicion anterior se compruebe la siguiente condicion 
@@ -78,10 +78,6 @@ public class Ejercicio7 {
 		//Cierro Scanner
 		dogma.close();
 		
-		// preguntar si la presentacion de datos es correcta en el print final ( : o palabras )
-		// y si correcion de errores 3 a la vez no uno a la vez
-		// if condicion 0 necesaria o no en primer if
-	
 	}
 
 }
