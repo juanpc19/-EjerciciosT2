@@ -6,9 +6,13 @@ public class Ejercicio5 {
 	
 		/*Compruebo que de ser variable numeroIntroducido menor que 0 la multiplica por -1
 		 * imprimiendo por pantalla un mensaje con el valor absoluto del numero
+		 * pruebo con -1
+		 * FUNCIONA CORRECTAMENTE
 		 * 
 		 * Compruebo que de ser variable numeroIntroducido igual o mayor que 0 
-		 * imprime por pantalla el numeroIntroducido lo cual sera igual al valor absoluto */
+		 * imprime por pantalla el numeroIntroducido lo cual sera igual al valor absoluto 
+		 * pruebo con 0 y con 3 
+		 * FUNCIONA CORRECTAMENTE*/
 
 	public static void main(String[] args) {
 		

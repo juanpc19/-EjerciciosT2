@@ -6,10 +6,12 @@ public class Ejercicio2 {
 	
 		/*Comprobar que variable "numerosDni" proporcionada por usuario mediante Scanner esta 
 		 * en el rango solicitado (es decir 8 digitos) [10000000,99999999] en cuyo caso el programa se ejecutara con normalidad
-		 * y que de no estarlo un mensaje de error aparece en pantalla
+		 * y que de no estarlo un mensaje de error aparece en pantalla 
+		 * FUNCIONA CORRECTAMENTE
 		 * 
-		 *Comprobar que el switch funciona introduciendo un numero de 8 digitos,
-		 *Comprobar uno a uno que cada case imprime por pantalla el mensaje con la letra correspondiente a su numero */
+		 * Comprobar que el switch funciona introduciendo un numero de 8 digitos es decir dentro de [10000000,99999999]
+		 * Comprobar uno a uno que cada case imprime por pantalla el mensaje con la letra correspondiente a su numero 
+		 * FUNCIONA CORRECTAMENTE */
 	
 	public static void main(String[] args) {
 

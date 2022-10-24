@@ -6,9 +6,15 @@ public class Ejercicio8 {
 	
 	/*Comprobar que si variable distanciaRecorrida es mayor a 800 y variable diasEstancia es mayor a 7
 	 * se imprima por pantalla un mensaje con la variable precioBillete con un descuento del 30% aplicado
+	 * pruebo con distanciaRecorrida = 801 y diasEstancia = 8
+	 * FUNCIONA CORRECTAMENTE
 	 * 
 	 * Comprobar que de no cumplirse que variable distanciaRecorrida es mayor a 800 y variable diasEstancia es mayor a 7
-	 * se imprima por pantalla un mensaje con la variable precioBillete */
+	 * se imprima por pantalla un mensaje con la variable precioBillete 
+	 * pruebo con distanciaRecorrida = 801 y diasEstancia = 7
+	 * FUNCIONA CORRECTAMENTE
+	 * pruebo con distanciaRecorrida = 600 y diasEstancia = 8
+	 * FUNCIONA CORRECTAMENTE*/
 
 	public static void main(String[] args) {
 

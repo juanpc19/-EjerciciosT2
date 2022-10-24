@@ -4,18 +4,21 @@ import java.util.Scanner;
 
 public class Ejercicio4 {
 	
-	/*Comprobar que si el usuario introduce un valor para variable numeroIntroducido
-	 * no comprendido en el intervalo [1,99] se imprima por pantalla un mensaje de error
+	/*Compruebo que si el usuario introduce un valor para variable numeroIntroducido
+	 * no comprendido en el intervalo [1,99] se imprima por pantalla un mensaje de error, 
+	 * FUNCIONA CORRECTAMENTE
 	 * 
-	 * Combrobar que si el usuario introduce un valor para variable numeroIntroducido
+	 * Compruebo que si el usuario introduce un valor para variable numeroIntroducido
 	 * comprendido en el intervalo [11,15] se ejecuta el switch que evalua la variable numeroIntroducido
-	 * imprimiendo mensaje por pantalla del case correspondiente
+	 * imprimiendo mensaje por pantalla del case correspondiente, 
+	 * FUNCIONA CORRECTAMENTE
 	 * 
-	 * Comprobar que de estar el numeroIntroducido fuera del rango [11,15] pero dentro del rango [1,99]
+	 * Compruebo que de estar el numeroIntroducido fuera del rango [11,15] y a su vez dentro del rango [1,99]
 	 * se evalua este a traves de dos switch diferentes que evaluan su unidad y su decena
 	 * y que estos asignan de forma conjunta (si es 10 o mayor, de ser del 1 al 9 solo ejecuta el switch unidad)
 	 * valores tipo string a variable numeroCadena segun su case correspondiente proporcionandonos
-	 * la varible numeroCadena que acto seguido sera imprimida por pantalla */
+	 * la varible numeroCadena que acto seguido sera imprimida por pantalla, 
+	 * FUNCIONA CORRECTAMENTE */
 
 	public static void main(String[] args) {
 

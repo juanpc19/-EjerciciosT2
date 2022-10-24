@@ -6,16 +6,25 @@ public class Ejercicio3 {
 	
 		/*Compruebo que de introducir el usuario un valor asignable a variable numeroAnimales igual a 0,
 		 * se imprima por pantalla un mensaje de error, impidiendo asi divisiones por 0 en la aplicacion
+		 * pruebo con numeroAnimales = 0 y 
+		 * FUNCIONA CORRECTAMENTE
 		 * 
 		 * Compruebo que de introducir el usuario un valor asignable a variable numeroAnimales diferente a 0,
-		 * se ejecute el resto del programa con normalidad
+		 * se ejecute el resto del programa con normalidad, pruebo con numeroAnimales = 23 y 
+		 * FUNCIONA CORRECTAMENTE
 		 *
-		 *Compruebo que ser la comida comprada mayor a la comida necesaria se imprima por pantalla
+		 * Compruebo que de ser la comida comprada mayor o igual a la comida necesaria se imprima por pantalla
 		 * un mensaje indicando que hay alimento suficiente para cada animal
+		 * comidaComprada = 4 y comidaNecesaria = 4 el programa 
+		 * FUNCIONA CORRECTAMENTE
+		 * comidaComprada = 5 y comidaNecesaria = 4 el programa 
+		 * FUNCIONA CORRECTAMENTE
 		 * 
 		 * Compruebo que en cualquier otro caso o lo que es lo mismo de ser la comida necesaria
-		 *  mayor a la comida comprada se imprima un mensaje por pantalla indicando esto 
-		 *  y que racion corresponde a cada animal*/
+		 * mayor a la comida comprada se imprima un mensaje por pantalla indicando: "No se dispone de comida suficiente para cada animal,"
+		 * " a cada animal le corresponde un racion equivalente a: (comidaComprada/numeroAnimales) + "kilos"
+		 * comidaNecesaria = 4 y comidaComprada = 5 se imprime el mensaje  de comida insuficiente y me proporciona la racion
+		 * FUNCIONA CORRECTAMENTE*/
 
 	public static void main(String[] args) {
 		
